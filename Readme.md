@@ -1,41 +1,129 @@
-# 🎬 AI-Movie Recommending System
+# 🎬 AI-Based Movie Recommendation System
 
-A visually stunning **IMDB-style movie recommendation dashboard** built with Streamlit.  
-Features **neon night mode, posters, ratings, genre badges, YouTube trailer embeds**, and responsive layout.
+An interactive **content-based movie recommendation system** built with Python and Streamlit. The application recommends movies similar to a selected movie and provides additional information such as posters, ratings, genres, release year, and trailers.
 
-## Features
-- Content-based movie recommendations
-- IMDB-style cards with posters, ratings, and similarity scores
-- Neon-themed night/day mode toggle
-- Embedded YouTube trailers
-- Genre filters
-- Responsive and mobile-friendly layout
+## ✨ Features
 
-## Installation
+* 🎯 Content-based movie recommendations
+* 🔍 Movie search and selection
+* 🎭 Genre-based filtering
+* 📊 Similarity scores
+* 🖼️ Movie posters and ratings
+* 🎥 YouTube trailer integration
+* 🔗 TMDB movie details
+* 🌗 Day Mode & Neon Night Mode
+* ⚡ Cached and concurrent API requests
+* 📱 Responsive Streamlit interface
 
-1. Clone the repository:
+## 🧠 How It Works
+
+```text
+Select Movie
+     ↓
+Find Similar Movies
+     ↓
+Apply Genre Filter
+     ↓
+Rank by Similarity
+     ↓
+Fetch TMDB Details
+     ↓
+Display Recommendations
+```
+
+The system uses a precomputed movie similarity matrix to identify and rank movies similar to the selected movie. The application then retrieves additional movie information through the TMDB API.
+
+## 🛠️ Tech Stack
+
+* **Python**
+* **Requests**
+* **Pillow**
+* **FPDF2**
+* **python-dotenv**
+* **TMDB API**
+* **YouTube**
+
+The project's dependencies are listed in `requirements.txt`.
+
+## 📂 Project Structure
+
+```text
+AI-Movie-Recommendation-System/
+│
+├── app.py
+├── movie_recom_sys.ipynb
+├── movie_list.pkl
+├── similarity.pkl
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+```
+
+## 🚀 Installation
+
+### 1. Clone the repository
+
 ```bash
-git clone https://github.com/yourusername/AI-Movie Recommending System.git
-cd AI-Movie Recommending System
-Create a virtual environment:
+git clone https://github.com/YOUR-USERNAME/AI-Movie-Recommendation-System.git
+cd AI-Movie-Recommendation-System
+```
 
-bash
-Copy code
-python -m venv .venv
-source .venv/bin/activate  # Mac/Linux
-.venv\Scripts\activate     # Windows
-Install dependencies:
+### 2. Create a virtual environment
 
-bash
-Copy code
+```bash
+python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
+venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-Add your TMDB API key:
+```
 
-bash
-Copy code
-echo "TMDB_API_KEY=your_api_key_here" > .env
-Run the app:
+### 4. Configure TMDB API
 
-bash
-Copy code
+Create a `.env` file:
+
+```env
+TMDB_API_KEY=your_api_key_here
+```
+
+**Do not upload `.env` or expose your API key on GitHub.** The project already excludes `.env` through `.gitignore`.
+
+### 5. Run the application
+
+```bash
 streamlit run app.py
+```
+
+## 🔮 Future Improvements
+
+* 🤖 Hybrid recommendation system
+* 👤 Personalized user profiles
+* ❤️ Favorites and watchlists
+* ⭐ User ratings
+* 🔐 Authentication
+* 📊 Recommendation evaluation metrics
+* 🌐 Online deployment
+* 🗄️ Database integration
+
+## 🎓 Skills Demonstrated
+
+**Recommendation Systems • Content-Based Filtering • Python • Streamlit • REST APIs • Data Processing • API Integration • UI Development • Concurrent Programming**
+
+## 👩‍💻 Author
+
+**Avani Mahendrakar**
+
+Third-Year Artificial Intelligence & Machine Learning Student
+
+---
+
+⭐ If you find this project useful, consider giving it a star!
