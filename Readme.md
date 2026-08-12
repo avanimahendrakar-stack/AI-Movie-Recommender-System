@@ -1,6 +1,6 @@
 # 🎬 AI-Based Movie Recommendation System
 
-An interactive **content-based movie recommendation system** built with Python and Streamlit. The application recommends movies similar to a selected movie and provides additional information such as posters, ratings, genres, release year, and trailers.
+An interactive **content-based movie recommendation system** built with Python. The application recommends movies similar to a selected movie and provides additional information such as posters, ratings, genres, release year, and trailers.
 
 ## ✨ Features
 
